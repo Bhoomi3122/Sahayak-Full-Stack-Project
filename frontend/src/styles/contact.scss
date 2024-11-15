@@ -1,0 +1,115 @@
+.contact-form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Slightly below the normal position */
+  animation: fadeIn 0.6s ease-out forwards; /* Add the fadeIn animation */
+}
+
+.contact-form {
+  width: 90%;
+  max-width: 900px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 0.6s ease-out forwards; /* Add the fadeIn animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px); /* Start from 10px below */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at its original position */
+  }
+}
+
+h2 {
+  text-align: center;
+  color: #bd5c6d !important;
+  font-size: 28px !important;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  > input {
+    padding: 10px;
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px !important;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #7068b9; /* Adjust based on your theme colors */
+}
+
+textarea {
+  height: 120px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px !important;
+  background-color: #dd6b80; /* Adjust to your theme color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px !important;
+}
+
+.submit-button:hover {
+  background-color: #c13b77; /* Adjust for hover */
+}
+
+/* Adjustments for toast container */
+.Toastify__toast--success {
+  background-color: rgb(4, 161, 4);
+  color: white;
+}
+
+.Toastify__toast--error {
+  background-color: red;
+  color: white;
+}
+
+.prompt-regular {
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.noto-serif-oriya {
+  font-family: "Noto Serif Oriya", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+.roboto-slab {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}

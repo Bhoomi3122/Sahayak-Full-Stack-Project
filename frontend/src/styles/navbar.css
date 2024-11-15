@@ -1,0 +1,129 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fce4ec;
+  color: #f8bbd0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(28, 28, 28);
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  max-height: 50px; /* Set a reasonable max height */
+  overflow: hidden;
+  box-shadow: 0 2px 4px #aba8ab; /* Add shadow for clarity */
+}
+
+/* Logo container */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  position: absolute; /* Position it separately from the links */
+  /* left: 20px; */
+}
+
+.navbar-logo img {
+  height: 140px; /* Adjust based on your needs */
+  width: auto;
+  margin-top: 18px;
+  position: flex-start;
+}
+
+/* Navbar Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: center; /* Center the links */
+  align-items: center;
+  /* width: 100%; Take full width for centering */
+  flex-grow: 1;
+}
+
+.nav-links li {
+  margin-top:5px;
+  margin-bottom: 5px;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Add the specific colors for each class */
+.nav-links a.class-1 {
+  color: #ec7f93 !important; /* Specific color for class-1 */
+}
+
+.nav-links a.class-2 {
+  color: #d46dc3 !important; /* Specific color for class-2 */
+}
+
+.nav-links a.class-3 {
+  color: #9d92ff !important; /* Specific color for class-3 */
+}
+
+.nav-links a.class-4 {
+  color: #3bb5d7 !important; /* Specific color for class-4 */
+}
+
+/* Navbar link hover effect */
+.nav-links a:hover {
+  color: #9f084e; /* Default hover effect for all links */
+}
+
+/* Hamburger Menu */
+.mobile-menu-icon {
+  display: none;
+  background: none;
+  border: none;
+  color: #bc1b53;
+  font-size: 24px;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #f8bbd0;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .nav-links-mobile li {
+    margin-bottom: 10px;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .navbar-logo img {
+    height: 60px; /* Scale down logo for mobile */
+  }
+}

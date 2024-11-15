@@ -1,0 +1,164 @@
+/* Home Container */
+.home-container {
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  color: #f48fb1;
+}
+
+/* Impactful Message */
+.message-section {
+  margin: 20px;
+}
+
+.message-section h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-right: 5%;
+}
+
+.message-head{
+  color:  rgb(247, 3, 3);
+  letter-spacing: 2px;
+  
+}
+.message-para{
+  color: red;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.message-section p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* Carousel Styles */
+.carousel-container {
+  max-width: 98%;
+  margin: 0 auto;
+  min-height: 35px;
+}
+
+.carousel-indicators{
+  display: none;
+}
+
+.carousel img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px 0;
+  align-items: center;
+}
+
+.cards-section h4{
+  padding-bottom: 5px;
+}
+
+.card {
+  width: 320px; /* Adjust as needed */
+  margin: 10px;
+  padding: 20px;
+  height: 280px;
+  color: white; /* Text color */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+  border-radius: 4px;
+  border-top-right-radius: 18px;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Move up on hover */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  border: 2.5px solid transparent; /* Transparent border as base */
+  border-image: linear-gradient(45deg, #fc5674, #df4dc7, #6256cf, #21a6cb); /* Gradient with theme colors */
+  border-image-slice: 1; /* Ensures the gradient fills the entire border */
+
+}
+
+.card-para{
+  font-size: 16px;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+
+/* Background Colors for Cards */
+.bg1 {
+  border:2px solid #fc2f55; /* Pink */
+  color: #fc2f55;
+}
+
+
+.bg2 {
+  border: 2px solid #dc1abc;/* Yellow Orange */
+  color: #dc1abc;
+}
+
+.bg3 {
+  border:2px solid #3524ca; /* Purple */
+  color: #3524ca;
+}
+
+.bg4 {
+  border:2px solid #0aa1ca; /* Blue */
+  color: #0aa1ca;
+}
+
+/* Website Introduction */
+.intro-section {
+  margin-top: 30px;
+}
+
+.intro-section h2 {
+  font-size: 1.8rem;
+  color: #880e4f;
+}
+
+.intro-section p {
+  font-size: 1rem;
+  color: #880e4f;
+  margin-top: 10px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .message-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .message-section p {
+    font-size: 1.2rem;
+  }
+
+  .carousel img {
+    height: 300px;
+  }
+
+  .intro-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .intro-section p {
+    font-size: 1rem;
+  }
+}
+.roboto-slab-font {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.kay-pho-du-regular {
+  font-family: "Kay Pho Du", serif;
+  font-weight: 400;
+  font-style: normal;
+}

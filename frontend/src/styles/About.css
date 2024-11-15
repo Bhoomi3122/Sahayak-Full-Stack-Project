@@ -1,0 +1,113 @@
+/* General Fade-in and Slide-in Effect */
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animations to the paragraphs */
+.para-1, .para-2, .para-3, .para-4 {
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  color: white;
+  opacity: 0;
+  animation: fadeInLeft 1s forwards; /* Default fade-in from left */
+  animation-delay: 0.2s; /* Slight delay for each paragraph */
+}
+
+.para-1 {
+  background-color: rgba(221, 107, 128, 0.85); /* Reduced opacity */
+  animation-delay: 0.2s; /* Adjust delay */
+}
+.para-2 {
+  background-color: rgba(185, 94, 170, 0.85); /* Reduced opacity */
+  animation-delay: 0.4s; /* Adjust delay */
+}
+.para-3 {
+  background-color: rgba(112, 104, 185, 0.85); /* Reduced opacity */
+  animation-delay: 0.6s; /* Adjust delay */
+}
+.para-4 {
+  background-color: rgba(46, 143, 170, 0.85); /* Reduced opacity */
+  animation-delay: 0.8s; /* Adjust delay */
+}
+
+/* About Section Background */
+.about-background {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-image: url('../images/about_us-bg-removebg-preview.png'); /* Path to your image */
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh; /* Ensures full page height */
+}
+
+/* About Section Container */
+.about-container {
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  width: 100%;
+  padding: 30px 50px;
+  position: relative;
+}
+
+/* Optional overlay background for the content */
+.about-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4); /* Semi-transparent overlay */
+  z-index: 1; /* Make sure it is behind the text */
+}
+
+/* About Content */
+.about-content {
+  position: relative;
+  z-index: 2; /* Content above overlay */
+  max-width: 700px; /* Control content width */
+  padding: 10px;
+  color: black;
+  overflow-wrap: break-word; /* Ensure that long words break and don't overflow */
+  word-wrap: break-word; /* For compatibility with older browsers */
+}
+
+/* Headings */
+.about-content h1 {
+  font-size: 2rem;
+  color: #7068b9;
+  margin-bottom: 15px;
+}
+
+/* Paragraphs */
+.about-content p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-size: 15px;
+  text-align: justify;
+  white-space: normal; /* Ensure the content doesn't get cut off or collapsed */
+  overflow-wrap: break-word; /* Break words that overflow */
+}
