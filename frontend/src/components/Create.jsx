@@ -34,7 +34,7 @@ const CreateForm = () => {
     };
 
     try {
-        const response = await fetch('/api/routes', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/api/routes`, {
             method: 'POST',
             body: JSON.stringify(post),
             headers: {

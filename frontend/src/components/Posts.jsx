@@ -26,7 +26,9 @@ const Posts = () => {
     useEffect(() => {
         const fetchPosts = async () => {
             try {
-                const response = await fetch('/api/routes');
+                console.log(`${process.env.REACT_APP_API_URL}/api/routes`)
+                const response = await fetch(`${process.env.REACT_APP_API_URL}/api/routes`);
+                
                 const json = await response.json();
 
                 if (response.ok) {
