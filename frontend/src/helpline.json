@@ -1,0 +1,123 @@
+[
+    {
+      "issue": "Domestic Violence",
+      "helpline": "181",
+      "description": "National Helpline for Women in distress offering counseling, information, and referrals.",
+      "website": "https://wcd.nic.in/"
+    },
+    {
+      "issue": "Sexual Harassment at Workplace",
+      "helpline": "011-23381900",
+      "description": "National Commission for Women (NCW) complaint helpline.",
+      "website": "https://ncw.nic.in/"
+    },
+    {
+      "issue": "Child Abuse",
+      "helpline": "1098",
+      "description": "Childline helpline for children in need of care and protection.",
+      "website": "https://www.childlineindia.org/"
+    },
+    {
+      "issue": "Cyber Harassment",
+      "helpline": "1930",
+      "description": "Cybercrime helpline for reporting online abuse and crimes.",
+      "website": "https://cybercrime.gov.in/"
+    },
+    {
+      "issue": "Trafficking of Women and Children",
+      "helpline": "011-24376430",
+      "description": "Anti-trafficking unit helpline for reporting trafficking cases.",
+      "website": "https://wcd.nic.in/"
+    },
+    {
+      "issue": "Mental Health Support",
+      "helpline": "9152987821",
+      "description": "Vandrevala Foundation helpline for mental health support.",
+      "website": "https://vandrevalafoundation.com/"
+    },
+    {
+      "issue": "LGBTQ+ Support",
+      "helpline": "09315778060",
+      "description": "Sahodaran helpline offering LGBTQ+ community support.",
+      "website": "https://www.sahodaran.org/"
+    },
+    {
+      "issue": "Legal Advice for Women",
+      "helpline": "011-23389090",
+      "description": "NCW legal cell helpline for free legal aid and support.",
+      "website": "https://ncw.nic.in/"
+    },
+    {
+      "issue": "Women’s Safety in Public Places",
+      "helpline": "112",
+      "description": "Emergency response service for safety concerns in public spaces.",
+      "website": "https://mha.gov.in/"
+    },
+    {
+      "issue": "Sexual Assault Survivors",
+      "helpline": "1091",
+      "description": "Women’s helpline for assistance with sexual assault cases.",
+      "website": "https://wcd.nic.in/"
+    },
+    {
+      "issue": "Senior Citizens' Abuse",
+      "helpline": "14567",
+      "description": "Helpline for reporting elder abuse and receiving support.",
+      "website": "https://socialjustice.gov.in/"
+    },
+    {
+      "issue": "Acid Attack Survivors",
+      "helpline": "011-23382922",
+      "description": "Support and rehabilitation for acid attack survivors by NCW.",
+      "website": "https://ncw.nic.in/"
+    },
+    {
+      "issue": "HIV/AIDS Support",
+      "helpline": "1097",
+      "description": "National AIDS helpline for counseling and information.",
+      "website": "https://naco.gov.in/"
+    },
+    {
+      "issue": "Drug and Alcohol Abuse",
+      "helpline": "1800110031",
+      "description": "National helpline for assistance with substance abuse issues.",
+      "website": "https://socialjustice.gov.in/"
+    },
+    {
+      "issue": "Human Rights Violations",
+      "helpline": "011-24651330",
+      "description": "National Human Rights Commission (NHRC) helpline.",
+      "website": "https://nhrc.nic.in/"
+    },
+    {
+      "issue": "Missing Children or Women",
+      "helpline": "011-24377700",
+      "description": "Helpline for reporting missing persons and human trafficking.",
+      "website": "https://trackthemissingchild.gov.in/"
+    },
+    {
+      "issue": "Pregnancy and Postpartum Support",
+      "helpline": "1800116699",
+      "description": "Mother & Child helpline for maternal health and counseling.",
+      "website": "https://nhm.gov.in/"
+    },
+    {
+      "issue": "Dowry Harassment",
+      "helpline": "181",
+      "description": "National Women’s helpline for reporting dowry-related harassment.",
+      "website": "https://wcd.nic.in/"
+    },
+    {
+      "issue": "Sexual Minority Rights",
+      "helpline": "180030006069",
+      "description": "Helpline for support and advice for sexual minorities.",
+      "website": "https://www.humsafar.org/"
+    },
+    {
+      "issue": "Crisis Support for Women",
+      "helpline": "8793088814",
+      "description": "Aarth-Astha’s crisis helpline for women in distress.",
+      "website": "https://aarthastha.org/"
+    }
+  ]
+  

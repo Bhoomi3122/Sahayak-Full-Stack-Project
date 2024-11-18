@@ -1,0 +1,62 @@
+.helpline-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  
+    .title {
+      font-size: 1.8rem;
+      color: #333;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+  
+    .helpline-card {
+      background: linear-gradient(145deg, #ffffff, #e6e6e6);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+      padding: 20px;
+      width: 250px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.2), -12px -12px 20px rgba(255, 255, 255, 0.95);
+      }
+  
+      .issue {
+        font-size: 1.2rem;
+        color: #18436e;
+        margin-bottom: 10px;
+        font-weight: 600;
+      }
+  
+      p {
+        font-size: 0.9rem;
+        color: #353535;
+        margin: 5px 0;
+  
+        strong {
+          color: #000;
+        }
+  
+        a {
+          color: #275684;
+          text-decoration: none;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  

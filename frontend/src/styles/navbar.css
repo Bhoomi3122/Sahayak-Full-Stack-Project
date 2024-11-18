@@ -7,8 +7,8 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #fce4ec;
-  color: #f8bbd0;
+  background-color: #1a1a1a; /* Dark background */
+  color: #ffffff; /* White text for readability */
 }
 
 /* Navbar */
@@ -16,76 +16,57 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(28, 28, 28);
+  background-color: #295887; /* Black navbar background */
   padding: 10px 20px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  max-height: 50px; /* Set a reasonable max height */
-  overflow: hidden;
-  box-shadow: 0 2px 4px #aba8ab; /* Add shadow for clarity */
+  max-height: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 /* Logo container */
 .navbar-logo {
   display: flex;
   align-items: center;
-  position: absolute; /* Position it separately from the links */
-  /* left: 20px; */
+  position: absolute;
 }
 
 .navbar-logo img {
-  height: 140px; /* Adjust based on your needs */
+  height: 80px !important; /* Adjust as needed */
   width: auto;
-  margin-top: 18px;
-  position: flex-start;
 }
 
 /* Navbar Links */
 .nav-links {
   display: flex;
   list-style: none;
-  justify-content: center; /* Center the links */
+  justify-content: center;
   align-items: center;
-  /* width: 100%; Take full width for centering */
   flex-grow: 1;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .nav-links li {
-  margin-top:5px;
-  margin-bottom: 5px;
-  margin-left: 45px;
-  margin-right: 45px;
+  margin: 0 20px;
 }
 
 .nav-links a {
   text-decoration: none;
   font-size: 16px;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-/* Add the specific colors for each class */
-.nav-links a.class-1 {
-  color: #ec7f93 !important; /* Specific color for class-1 */
-}
-
-.nav-links a.class-2 {
-  color: #d46dc3 !important; /* Specific color for class-2 */
-}
-
-.nav-links a.class-3 {
-  color: #9d92ff !important; /* Specific color for class-3 */
-}
-
-.nav-links a.class-4 {
-  color: #3bb5d7 !important; /* Specific color for class-4 */
+  color: white; /* Crimson Red links */
+  transition: color 0.3s ease, transform 0.3s ease;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
 }
 
 /* Navbar link hover effect */
 .nav-links a:hover {
-  color: #9f084e; /* Default hover effect for all links */
+  font-weight: 500; /* Lighter red on hover */
+  transform: scale(1.1); /* Slight scaling for hover effect */
 }
 
 /* Hamburger Menu */
@@ -93,7 +74,7 @@ body {
   display: none;
   background: none;
   border: none;
-  color: #bc1b53;
+  color: #ffffff; /* White icon for visibility */
   font-size: 24px;
 }
 
@@ -109,7 +90,7 @@ body {
     position: absolute;
     top: 70px;
     right: 0;
-    background-color: #f8bbd0;
+    background-color: #000000; /* Black background for mobile menu */
     width: 100%;
     height: auto;
     padding: 10px;

@@ -26,26 +26,28 @@
   padding: 20px;
   margin-bottom: 15px;
   border-radius: 10px;
-  color: white;
+  color: black;
   opacity: 0;
   animation: fadeInLeft 1s forwards; /* Default fade-in from left */
   animation-delay: 0.2s; /* Slight delay for each paragraph */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgb(214, 213, 213); /* Reduced opacity */
 }
 
 .para-1 {
-  background-color: rgba(221, 107, 128, 0.85); /* Reduced opacity */
+  
   animation-delay: 0.2s; /* Adjust delay */
 }
 .para-2 {
-  background-color: rgba(185, 94, 170, 0.85); /* Reduced opacity */
+  
   animation-delay: 0.4s; /* Adjust delay */
 }
 .para-3 {
-  background-color: rgba(112, 104, 185, 0.85); /* Reduced opacity */
+  
   animation-delay: 0.6s; /* Adjust delay */
 }
 .para-4 {
-  background-color: rgba(46, 143, 170, 0.85); /* Reduced opacity */
+ 
   animation-delay: 0.8s; /* Adjust delay */
 }
 
@@ -98,7 +100,7 @@
 /* Headings */
 .about-content h1 {
   font-size: 2rem;
-  color: #7068b9;
+  color: #295887;
   margin-bottom: 15px;
 }
 

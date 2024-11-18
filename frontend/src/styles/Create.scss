@@ -1,14 +1,16 @@
+/* Main Container */
 .create-container {
-  width: 100%; /* Width set to 130% */
-  max-width: 750px; /* Set a max width to control the expansion */
-  margin: 20px auto; /* Center horizontally with auto margins */
+  width: 100%; /* Full width */
+  max-width: 750px; /* Max width to control expansion */
+  margin: 20px auto; /* Center horizontally */
   padding: 20px;
-  border-radius: 12px; /* Increased border-radius for a softer look */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15); /* Softer shadow for depth */
-  background: linear-gradient(to right, #ffcccc, #e6e6e6);
-  animation: fadeIn 0.5s; /* Fade-in effect */
+  border-radius: 12px; /* Softer border-radius */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  background: #f1f1f1; /* Light grey background */
+  animation: fadeIn 0.5s ease; /* Fade-in effect */
 }
 
+/* Keyframes for Fade-in Effect */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -20,94 +22,104 @@
   }
 }
 
+/* Form Title */
 .form-title {
   text-align: center;
   margin-bottom: 30px;
-  color: #c64f65; /* Using the class-1 theme color */
-  font-size: 1.6rem; /* Increased font size */
-  font-family: 'Arial', sans-serif; /* Set a clean font */
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  color: #306abb; /* Blue color for heading */
+  font-size: 1.6rem; /* Font size */
+  font-family: 'Arial', sans-serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
 }
 
+/* Form Structure */
 .create-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+/* Form Group Styling */
 .form-group {
   margin-bottom: 20px;
 }
 
+/* Label Styling */
 label {
   font-weight: bold;
   margin-bottom: 5px;
   display: block;
-  color: #333;
+  color: #333; /* Black for text */
   font-size: 0.8rem;
 }
 
+/* Input, Email, Textarea, and Select Fields Styling */
 input[type="text"],
 input[type="email"],
 textarea,
 select {
-  width: 100%; /* Set to 100% for proper expansion */
+  width: 100%; /* Full width for proper expansion */
   padding: 14px;
-  border: 2px solid #ddd;
-  border-radius: 8px; /* Increased border-radius for a softer look */
+  border: 2px solid #ddd; /* Light grey border */
+  border-radius: 8px; /* Rounded corners */
   font-size: 0.8rem;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Added transition for shadow */
-  background-color: #f8f8f8; /* Light background color for inputs */
+  background-color: #fff; /* White background for inputs */
   box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus */
 
   &:focus {
-    border-color: #ff879d; /* Using the class-1 theme color */
-    box-shadow: 0 0 8px rgba(221, 107, 128, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow on focus */
+    border-color: #6c8ebf; /* Blue border on focus */
+    box-shadow: 0 0 8px rgba(108, 142, 191, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Focus shadow */
     outline: none;
   }
 }
 
+/* Textarea Styling */
 textarea {
   height: 100px; /* Increased height for better user experience */
   resize: vertical;
 }
 
+/* Select Dropdown Styling */
 select {
   padding: 12px;
   border: 2px solid #ddd;
   border-radius: 8px;
-  background-color: #f7f7f7; /* Light background color */
+  background-color: #fff; /* White background */
   font-size: 0.8rem;
   color: #666;
-  transition: border-color 0.3s ease, background-color 0.3s ease; /* Added transition for background color */
   box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+  transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transition for background color */
 
   &:focus {
-    border-color: #f6778e; /* Using the class-1 theme color */
-    background-color: #fff; /* Change background on focus */
+    border-color: #6c8ebf; /* Blue border on focus */
+    background-color: #fff; /* White background on focus */
     outline: none;
   }
 }
 
+/* Submit Button Styling */
 .submit-button {
-  padding: 10px !important;
-  background-color: #dd6b80; /* Using the class-1 theme color */
+  padding: 10px 15px;
+  background-color: #6c8ebf; /* Blue button background */
   color: #ffffff;
   border: none;
-  border-radius: 8px; /* Increased border-radius for a softer look */
+  border-radius: 8px; /* Softer border-radius */
   cursor: pointer;
-  font-size: 0.8rem;
-  transition: background-color 0.3s ease; /* Removed hover scaling effect */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Button shadow for depth */
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Button shadow for depth */
 
   &:hover {
-    background-color: #c75a70; /* Darker shade on hover */
+    background-color: #537b99; /* Darker blue on hover */
   }
 
   &:active {
     transform: translateY(0); /* Reset lift effect on click */
   }
 }
+
+/* Font Family for Noto Serif Oriya */
 .noto-serif-oriya {
   font-family: "Noto Serif Oriya", serif;
   font-optical-sizing: auto;
@@ -115,23 +127,29 @@ select {
   font-style: normal;
   letter-spacing: 2px;
 }
+
+/* Font Family for Roboto Slab */
 .roboto-slab {
   font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
 }
+
+/* Radio Button Container Styling */
 .radio-container {
   display: flex;
   gap: 15px; /* Adjust the spacing between Yes and No */
   margin-top: 5px;
 }
 
+/* Radio Button Label Styling */
 .radio-container label {
   font-weight: normal;
   font-size: 1rem;
-  color: #333;
+  color: #333; /* Black for radio button labels */
   display: flex;
   align-items: center;
   gap: 5px; /* Space between radio button and label */
 }
+

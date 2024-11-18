@@ -7,7 +7,8 @@ import Contact from "./components/Contact";
 import About from "./components/About";
 import Blogs from "./components/Blogs";
 import Create from "./components/Create";
-import Posts from "./components/Posts"
+import Posts from "./components/Posts";
+import Helpline from "./components/Helpline"
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; // Import toast CSS
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/create" element={<Create />} />
           <Route path="/posts" element={<Posts/>} />
+          <Route path="/help" element={<Helpline/>} />
         </Routes>
 
         {/* Toast Notifications */}

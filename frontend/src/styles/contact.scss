@@ -1,3 +1,4 @@
+/* Contact Form Container */
 .contact-form-container {
   width: 100%;
   display: flex;
@@ -8,17 +9,19 @@
   animation: fadeIn 0.6s ease-out forwards; /* Add the fadeIn animation */
 }
 
+/* Contact Form Styling */
 .contact-form {
   width: 90%;
   max-width: 900px;
-  background-color: white;
+  background-color: #f1f1f1; /* Grey background for the form */
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
   opacity: 0; /* Initially hidden */
-  animation: fadeIn 0.6s ease-out forwards; /* Add the fadeIn animation */
+  animation: fadeIn 0.6s ease-out forwards; /* Fade-in animation */
 }
 
+/* Fade-in Keyframes */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -30,47 +33,52 @@
   }
 }
 
+/* Heading */
 h2 {
   text-align: center;
-  color: #bd5c6d !important;
+  color: #6c8ebf; /* Blue text for heading */
   font-size: 28px !important;
 }
 
+/* Form Group */
 .form-group {
   margin-bottom: 15px;
-  > input {
-    padding: 10px;
-  }
 }
 
+/* Label Styling */
 label {
   display: block;
   margin-bottom: 10px;
   font-size: 18px;
-  color: #333;
+  color: #333; /* Black color for label */
 }
 
+/* Input and Textarea Fields Styling */
 input, textarea {
   width: 100%;
   padding: 10px !important;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
+  background-color: #fff; /* White background for inputs */
 }
 
+/* Input and Textarea Focus Styling */
 input:focus, textarea:focus {
   outline: none;
-  border-color: #7068b9; /* Adjust based on your theme colors */
+  border-color: #6c8ebf; /* Blue border on focus */
 }
 
+/* Textarea Height */
 textarea {
   height: 120px;
 }
 
+/* Submit Button Styling */
 .submit-button {
   width: 100%;
   padding: 10px !important;
-  background-color: #dd6b80; /* Adjust to your theme color */
+  background-color: #6c8ebf; /* Blue background for submit button */
   color: white;
   border: none;
   border-radius: 5px;
@@ -78,11 +86,12 @@ textarea {
   font-size: 16px !important;
 }
 
+/* Submit Button Hover Effect */
 .submit-button:hover {
-  background-color: #c13b77; /* Adjust for hover */
+  background-color: #537b99; /* Darker blue on hover */
 }
 
-/* Adjustments for toast container */
+/* Toast Success and Error Styles */
 .Toastify__toast--success {
   background-color: rgb(4, 161, 4);
   color: white;
@@ -93,12 +102,14 @@ textarea {
   color: white;
 }
 
+/* Font Family for Prompt */
 .prompt-regular {
   font-family: "Prompt", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
+/* Font Family for Noto Serif Oriya */
 .noto-serif-oriya {
   font-family: "Noto Serif Oriya", serif;
   font-optical-sizing: auto;
@@ -107,6 +118,7 @@ textarea {
   letter-spacing: 2px;
 }
 
+/* Font Family for Roboto Slab */
 .roboto-slab {
   font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
