@@ -13,7 +13,7 @@ app.use((req,res,next)=>{
 app.use(express.json())
 
 app.use('/api/routes',postroutes)
-
+const PORT = process.env.PORT
 mongoose.connect(process.env.MONGO_URI)
 .then(()=>{
     app.listen(PORT,()=>{
@@ -23,4 +23,3 @@ mongoose.connect(process.env.MONGO_URI)
 .catch((error)=>{
     console.log(error)
 })
-const PORT = process.env.PORT
