@@ -1,4 +1,22 @@
 [
+  {
+    "issue": "Cyber Harassment",
+    "helpline": "1930",
+    "description": "Cybercrime helpline for reporting online abuse and crimes.",
+    "website": "https://cybercrime.gov.in/"
+  },
+  {
+    "issue": "Women’s Safety in Public Places",
+    "helpline": "112",
+    "description": "Emergency response service for safety concerns in public spaces.",
+    "website": "https://mha.gov.in/"
+  },
+  {
+    "issue": "LGBTQ+ Support",
+    "helpline": "09315778060",
+    "description": "Sahodaran helpline offering LGBTQ+ community support.",
+    "website": "https://www.sahodaran.org/"
+  },
     {
       "issue": "Domestic Violence",
       "helpline": "181",
@@ -17,12 +35,7 @@
       "description": "Childline helpline for children in need of care and protection.",
       "website": "https://www.childlineindia.org/"
     },
-    {
-      "issue": "Cyber Harassment",
-      "helpline": "1930",
-      "description": "Cybercrime helpline for reporting online abuse and crimes.",
-      "website": "https://cybercrime.gov.in/"
-    },
+   
     {
       "issue": "Trafficking of Women and Children",
       "helpline": "011-24376430",
@@ -35,24 +48,14 @@
       "description": "Vandrevala Foundation helpline for mental health support.",
       "website": "https://vandrevalafoundation.com/"
     },
-    {
-      "issue": "LGBTQ+ Support",
-      "helpline": "09315778060",
-      "description": "Sahodaran helpline offering LGBTQ+ community support.",
-      "website": "https://www.sahodaran.org/"
-    },
+    
     {
       "issue": "Legal Advice for Women",
       "helpline": "011-23389090",
       "description": "NCW legal cell helpline for free legal aid and support.",
       "website": "https://ncw.nic.in/"
     },
-    {
-      "issue": "Women’s Safety in Public Places",
-      "helpline": "112",
-      "description": "Emergency response service for safety concerns in public spaces.",
-      "website": "https://mha.gov.in/"
-    },
+    
     {
       "issue": "Sexual Assault Survivors",
       "helpline": "1091",

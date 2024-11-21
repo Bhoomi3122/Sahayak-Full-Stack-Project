@@ -2,10 +2,10 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/home.css';
-import violence from '../images/violence.jpg';
+import violence from '../images/violence.png';
 import rape from '../images/rape.jpg';
-import rape2 from '../images/rape-2.jpg';
-import safety from '../images/Safety-of-Women-in-India.jpg';
+import rape2 from '../images/rape-2.png';
+import safety from '../images/women_safety.png';
 import empowerment from '../images/empowerment.png'
 
 const Home = () => {
@@ -17,24 +17,18 @@ const Home = () => {
       {/* Carousel */}
       <div className="carousel-container">
         <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={violence}
-              alt="First slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={rape}
-              alt="Second slide"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
+        <Carousel.Item>
             <img
               className="d-block w-100"
               src={rape2}
+              alt="Third slide"
+            />
+          </Carousel.Item>
+          
+        <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={empowerment}
               alt="Third slide"
             />
           </Carousel.Item>
@@ -45,11 +39,13 @@ const Home = () => {
               alt="Fourth slide"
             />
           </Carousel.Item>
+          
+
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src={empowerment}
-              alt="Fifth slide"
+              src={violence}
+              alt="First slide"
             />
           </Carousel.Item>
         </Carousel>

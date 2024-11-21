@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import '../styles/Posts.scss';  // Import the CSS for styling
+import '../styles/Posts.scss'; 
 
-// Utility to calculate "time ago" label
+
 const getTimeAgo = (createdAt) => {
     const createdDate = new Date(createdAt);
     const now = new Date();
@@ -20,7 +20,7 @@ const Posts = () => {
     const [expandedPost, setExpandedPost] = useState(null);
 
     const togglePostExpansion = (index) => {
-        setExpandedPost(expandedPost === index ? null : index); // Toggle the expanded post
+        setExpandedPost(expandedPost === index ? null : index); 
     };
 
     useEffect(() => {
@@ -78,13 +78,13 @@ const Posts = () => {
                             <span className="time-label">{getTimeAgo(createdAt)}</span>
                         </div>
 
-                        {/* Title */}
+                      
                         <h4 className="title">{Title || "Untitled Post"}</h4>
 
-                        {/* Issue */}
+                        
                         <p className="issue"><strong>Issue:</strong> {Issue || "No issue described"}</p>
 
-                        {/* Conditionally render details only when expanded */}
+                        
                         {isExpanded && (
                             <div className="post-details">
                                 <p><strong>Location:</strong> {Location || "Not specified"}</p>
@@ -106,7 +106,6 @@ const Posts = () => {
                             </div>
                         )}
 
-                        {/* Read more/less button */}
                         <button
                             onClick={() => togglePostExpansion(index)}
                             className="toggle-button"
