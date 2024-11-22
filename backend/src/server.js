@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 const cors = require('cors');
 
 app.use(cors({
-    origin: 'http://localhost:3000', // Replace with your frontend URL in production
+    origin: 'https://sahayak-full-stack-project.onrender.com', // Replace with your frontend URL in production
     methods: 'GET,POST,PUT,DELETE', // Allow these HTTP methods
     allowedHeaders: 'Content-Type' // Add more headers if needed
   }));
