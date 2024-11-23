@@ -3,7 +3,6 @@ import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/home.css';
 import violence from '../images/violence.png';
-import rape from '../images/rape.jpg';
 import rape2 from '../images/rape-2.png';
 import safety from '../images/women_safety.png';
 import empowerment from '../images/empowerment.png'
