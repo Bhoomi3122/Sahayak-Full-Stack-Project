@@ -13,12 +13,13 @@ const CreateForm = () => {
   const [Keywords, setKeywords] = useState('');
   const [IsAnonymous, setIsAnonymous] = useState(false);
   const [Caution, setCaution] = useState('');
-  const [createdDate, setCreatedDate] = useState(new Date().toLocaleString());
+  const [createdDate] = useState(new Date().toLocaleString());
   const isSubmitting = useRef(false);
 
   const submitHandler = async (e) => {
     e.preventDefault();
-
+    if (isSubmitting.current) return; 
+    isSubmitting.current = true;
     // Construct the post object with correct API field names
     const post = {
         ...(Title && { Title }),
@@ -72,7 +73,7 @@ const CreateForm = () => {
                 pauseOnHover: true,
                 draggable: true,
             });
-
+            isSubmitting.current = false;
             console.log("New post added:", json);
         }
     } catch (error) {
