@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 
 const getPosts = async (req, res) => {
     const posts = await Post.find({}).sort({ createdAt: -1 })
+    
     res.status(200).json(posts)
 }
 
